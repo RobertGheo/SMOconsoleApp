@@ -1,0 +1,15 @@
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\bin\Debug\net6.0\SMOconsoleApp.exe
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\bin\Debug\net6.0\SMOconsoleApp.deps.json
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\bin\Debug\net6.0\SMOconsoleApp.runtimeconfig.json
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\bin\Debug\net6.0\SMOconsoleApp.dll
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\bin\Debug\net6.0\SMOconsoleApp.pdb
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\obj\Debug\net6.0\SMOconsoleApp.csproj.AssemblyReference.cache
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\obj\Debug\net6.0\SMOconsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\obj\Debug\net6.0\SMOconsoleApp.AssemblyInfoInputs.cache
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\obj\Debug\net6.0\SMOconsoleApp.AssemblyInfo.cs
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\obj\Debug\net6.0\SMOconsoleApp.csproj.CoreCompileInputs.cache
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\obj\Debug\net6.0\SMOconsoleApp.dll
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\obj\Debug\net6.0\refint\SMOconsoleApp.dll
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\obj\Debug\net6.0\SMOconsoleApp.pdb
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\obj\Debug\net6.0\SMOconsoleApp.genruntimeconfig.cache
+D:\Projects_C#\SMOconsoleApp\SMOconsoleApp\obj\Debug\net6.0\ref\SMOconsoleApp.dll
