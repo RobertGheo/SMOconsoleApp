@@ -8,6 +8,7 @@ namespace SMOconsoleApp.MenuOptions
 {
     internal class OptionsD
     {
+        // first method for counting words from a string
         public static int CountWords(string inputString)
         {
             int wordsCount = 0, wordsTotal = 1;
@@ -34,6 +35,7 @@ namespace SMOconsoleApp.MenuOptions
             Console.WriteLine("\nThe result for option D:");
             return wordsTotal;
         }
+        // second method for counting words from a string
         public static int CountWordsB(string inputString)
         {
             int wordsTotal = 0;

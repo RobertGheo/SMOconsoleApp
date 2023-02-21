@@ -8,24 +8,26 @@ namespace SMOconsoleApp.MenuOptions
 {
     internal class OptionsC
     {
+        // first method to find vowels from a string
         public static int VowelsStr(string vowelString)
         {
             int totalVowel = 0;
             string vowelLower = vowelString.ToLower();
-            for (int i = 0; i< vowelLower.Length; i++)
-            {
+            for (int i = 0; i< vowelLower.Length; i++) //run a loop through the string length
+            {                                          //if a vowel is found is adding to the counting value 
                 if (vowelLower[i] == 'a' || 
                     vowelLower[i] == 'e' ||
                     vowelLower[i] == 'i' || 
                     vowelLower[i] == 'o' ||
                     vowelLower[i] == 'u')
                 {
-                    totalVowel++;
+                    totalVowel++;                      //adding when a vowel is found
                 }
             }
             Console.WriteLine("\nThe result for option C:");
             return totalVowel;
         }
+        // second method to find vowels from a string
         public static int VowelsStrB(string vowelString)
         {
             int totalVowel = 0;

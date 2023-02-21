@@ -8,6 +8,7 @@ namespace SMOconsoleApp.MenuOptions
 {
     internal class OptionsH
     {
+        //the method to find mpst used word in a string
         public static void MostUsedWord(string inputString)
         {
             Dictionary<string, int> dictionary = new Dictionary<string, int>();
@@ -17,6 +18,7 @@ namespace SMOconsoleApp.MenuOptions
             sInput = sInput.Replace(".", ""); 
             string[] arr = sInput.Split(' '); 
 
+            //here the words are saved in a dictionary
             foreach (string word in arr) 
             {
                 if (word.Length >= 2) 
@@ -30,9 +32,10 @@ namespace SMOconsoleApp.MenuOptions
             }
             int tempTimes = 0;
             string tempString = "";
+
+            //here the loop is runing to find the most used word stored in dictionary 
             foreach (KeyValuePair<string, int> pair in dictionary) 
-            {
-                //Console.WriteLine("Key: {0}, Pair: {1}", pair.Key, pair.Value);   
+            {                
                 if (tempTimes <= pair.Value)
                 {
                     tempTimes = pair.Value;

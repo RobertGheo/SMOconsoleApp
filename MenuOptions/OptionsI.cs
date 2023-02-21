@@ -8,6 +8,7 @@ namespace SMOconsoleApp.MenuOptions
 {
     internal class OptionsI
     {
+        //the method is to performe multiple operations on the same string
         public static void MultipleOperations(string inputString)
         {
             Console.WriteLine("Please inser multiple menu options");
@@ -16,12 +17,13 @@ namespace SMOconsoleApp.MenuOptions
             char[] charArray = sInput.ToCharArray();
             
             Console.WriteLine("\nThe result for option I multiple operations:");
+
             for (int i = 0; i< charArray.Length; i++)
             {
                 if (charArray[i] == 'a')
                     Console.WriteLine("\n>>>\t {0}", OptionsA.UpperCase(inputString));
                 if (charArray[i] == 'b')
-                    Console.WriteLine("\n>>>\t {0}", OptionsB.Reverse1(inputString));
+                    Console.WriteLine("\n>>>\t {0}", OptionsB.Reverse(inputString));
                 if (charArray[i] == 'c')
                     Console.WriteLine("\n>>>\t {0} vowels", OptionsC.VowelsStr(inputString));
                 if (charArray[i] == 'd')
@@ -29,7 +31,7 @@ namespace SMOconsoleApp.MenuOptions
                 if (charArray[i] == 'e')
                     Console.WriteLine("\n>>>\t {0}", OptionsE.TitleCase(inputString));
                 if (charArray[i] == 'f')
-                    Console.WriteLine("\n>>>\t '{0}' {1}",inputString,OptionsF.Palindrome(inputString));
+                    Console.WriteLine("\n>>>\t '{0}' {1}",inputString,OptionsF.PalindromeB(inputString));
                 if (charArray[i] == 'g')
                     OptionsG.MinMaxWord(inputString);
                 if (charArray[i] == 'h')

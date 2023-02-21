@@ -9,21 +9,12 @@ namespace SMOconsoleApp.MenuOptions
     internal class OptionsB
     {
         //first method to revers a string
-        public static string Reverse1(string reverse)
+        public static string Reverse(string reverse)
         {
             char[] charArray = reverse.ToCharArray();
-            Array.Reverse(charArray);            
-            Console.WriteLine("\nThe result for option B:");
-            return new string(charArray);
-        }
+            string reverseStr = string.Empty;
 
-        //second method to revers a string
-        public static string Reverse2(string reverse)
-        {
-            char[] charArray = reverse.ToCharArray();
-            string reverseStr = String.Empty;
-
-            for (int i = charArray.Length -1; i> -1; i--)
+            for (int i = charArray.Length - 1; i >= 0; i--)
             {
                 reverseStr += charArray[i];
             }
@@ -31,5 +22,13 @@ namespace SMOconsoleApp.MenuOptions
             return reverseStr;
         }
 
+        //second method to revers a string
+        public static string ReverseB(string reverse)
+        {
+            char[] charArray = reverse.ToCharArray();
+            Array.Reverse(charArray);
+            Console.WriteLine("\nThe result for option B:");
+            return new string(charArray);
+        }
     }
 }

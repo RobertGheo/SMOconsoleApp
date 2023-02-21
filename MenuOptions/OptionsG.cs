@@ -9,6 +9,7 @@ namespace SMOconsoleApp.MenuOptions
     internal class OptionsG
     {
         static string minWord = "", maxWord = "";
+        //method to find the longest and shortest words in a stirng
         public static void MinMaxWord(string inputS)
         {         
             int lengthString = inputS.Length;
@@ -44,9 +45,8 @@ namespace SMOconsoleApp.MenuOptions
             
             minWord = inputS.Substring(minStartIndex, minLength);
             maxWord = inputS.Substring(maxStartIndex, maxLength);
-            
+
             Console.WriteLine("\nThe result for option G:");
-            //Console.WriteLine("Your string: '{0}'", inputS);
             Console.WriteLine("\n>>>\t Longest word: '{0}'", maxWord);
             Console.WriteLine("\n>>>\t Shortest word: '{0}'", minWord);
         }

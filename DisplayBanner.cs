@@ -8,6 +8,7 @@ namespace SMOconsoleApp
 {
     internal class DisplayBanner
     {
+        //this class is created to display a intro at the start of the application
         public static void DisplayBannerA()
         {            
             string inputD1 = "      <<<<<<<<<<  >>>>>>>>>>";
@@ -22,11 +23,12 @@ namespace SMOconsoleApp
             Console.Clear();
             Console.WriteLine("\n");
             Console.Write("\n\r\t");
-
+            
+            //used 'for' loop to display banner grafic of each char individual
             for (int i = 0; i < charArray1.Length; i++)
             {
                 Console.Write(charArray1[i]);
-                Thread.Sleep(30);
+                Thread.Sleep(25);
             }
 
             Console.WriteLine("\n");
@@ -37,7 +39,7 @@ namespace SMOconsoleApp
             for (int i = 0; i < charArray2.Length; i++)
             {
                 Console.Write(charArray2[i]);
-                Thread.Sleep(30);
+                Thread.Sleep(25);
             }
 
             Console.WriteLine("\n");
@@ -48,7 +50,7 @@ namespace SMOconsoleApp
             for (int i = 0; i < charArray3.Length; i++)
             {
                 Console.Write(charArray3[i]);
-                Thread.Sleep(30);
+                Thread.Sleep(25);
             }
 
             Console.WriteLine("\n");
@@ -59,9 +61,9 @@ namespace SMOconsoleApp
             for (int i = 0; i < charArray4.Length; i++)
             {
                 Console.Write(charArray4[i]);
-                Thread.Sleep(30);
+                Thread.Sleep(25);
             }
-            Thread.Sleep(200);
+            Thread.Sleep(100);
             Console.Write("\n");
             Console.WriteLine("\n<<< Welcome to the String manipulation program >>>");
             Thread.Sleep(1500);

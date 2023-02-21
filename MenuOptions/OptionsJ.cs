@@ -8,7 +8,9 @@ namespace SMOconsoleApp.MenuOptions
 {
     internal class OptionsJ
     {
-     
+        //this method is to perform an invented string manipulation operation
+        //is transforming the string into camel letters without empty spaces
+        //and identifies string vowels and displays them in a lowercase and uppercase pair
         public static void NewOperation(string inputString)
         {                       
             string sInput = inputString.ToLower();
@@ -22,8 +24,14 @@ namespace SMOconsoleApp.MenuOptions
 
             for (int i = 0; i < charArray.Length; i++)
             {
-                Console.Write(charArray[i].ToString().ToUpper());
-                Console.Write(charArray[i].ToString().ToLower() + " ");
+                if (i % 2 == 0)
+                {
+                    Console.Write(charArray[i].ToString().ToUpper());
+                }
+                else
+                {
+                    Console.Write(charArray[i].ToString().ToLower());
+                }                
                 Thread.Sleep(50);
             }
             Console.WriteLine("\n");

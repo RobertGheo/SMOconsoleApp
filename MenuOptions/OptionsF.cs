@@ -8,6 +8,7 @@ namespace SMOconsoleApp.MenuOptions
 {
     internal class OptionsF
     {
+        //first method to find if a string is Palindrome
         public static bool Palindrome(string inputUser)
         {
             string insertStr = inputUser.ToLower();
@@ -18,6 +19,7 @@ namespace SMOconsoleApp.MenuOptions
             return new string(reverseStr).Equals(insertStr);
         }
 
+        //second method to find if a string is Palindrome
         public static string PalindromeB(string inputUser)
         {
             string reverseStr = string.Empty;
@@ -41,6 +43,7 @@ namespace SMOconsoleApp.MenuOptions
             return  resultPal;
         }
 
+        //third method to find if a string is Palindrome
         public static string PalindromeC(string inputUser)
         {
             string insertStr = inputUser.ToLower();
