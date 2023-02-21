@@ -18,7 +18,7 @@ namespace SMOconsoleApp.MenuOptions
             {
                 reverseStr += charArray[i];
             }
-            Console.WriteLine("\nThe result for option B1:");
+            Console.WriteLine("\nThe result for option B:");
             return reverseStr;
         }
 
