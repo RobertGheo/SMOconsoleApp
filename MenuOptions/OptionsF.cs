@@ -16,8 +16,6 @@ namespace SMOconsoleApp.MenuOptions
             Array.Reverse(reverseStr);
             Console.WriteLine(reverseStr);
 
-            Console.Clear();
-            Program.DisplayMenu();
             Console.WriteLine("\nThe result for option F:");
             return new string(reverseStr).Equals(insertStr);
         }
@@ -39,8 +37,7 @@ namespace SMOconsoleApp.MenuOptions
             {
                 resultPal = "is not Palindrome";
             }
-            Console.Clear();
-            Program.DisplayMenu();
+
             Console.WriteLine("\nThe result for option F:");
             return  resultPal;
         }
@@ -64,8 +61,6 @@ namespace SMOconsoleApp.MenuOptions
                 resultPal = "is not Palindrome";
             }
 
-            Console.Clear();
-            Program.DisplayMenu();
             Console.WriteLine("\nThe result for option F:");
             return resultPal;
         }

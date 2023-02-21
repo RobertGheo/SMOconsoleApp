@@ -23,8 +23,6 @@ namespace SMOconsoleApp.MenuOptions
                     totalVowel++;
                 }
             }
-            Console.Clear();
-            Program.DisplayMenu();
             Console.WriteLine("\nThe result for option C:");
             return totalVowel;
         }
@@ -41,9 +39,7 @@ namespace SMOconsoleApp.MenuOptions
                     totalVowel++;
                 }
             }
-            Console.Clear();
-            Program.DisplayMenu();
-            Console.WriteLine("\nThe result for option A:");
+            Console.WriteLine("\nThe result for option C:");
             return totalVowel;
         }
 

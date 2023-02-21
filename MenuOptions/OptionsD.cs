@@ -31,8 +31,6 @@ namespace SMOconsoleApp.MenuOptions
                 wordsCount++;               
             }
 
-            Console.Clear();
-            Program.DisplayMenu();
             Console.WriteLine("\nThe result for option D:");
             return wordsTotal;
         }
@@ -60,8 +58,6 @@ namespace SMOconsoleApp.MenuOptions
             }
             wordsTotal++;
 
-            Console.Clear();
-            Program.DisplayMenu();
             Console.WriteLine("\nThe result for option D:");
             return wordsTotal;
         }

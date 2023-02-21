@@ -22,32 +22,43 @@ namespace SMOconsoleApp
                     switch (inputMenu)
                     {
                         case "a":
+                            ClearDisplayMenu();
                             Console.WriteLine("\n>>>\t {0}", OptionsA.UpperCase(inputString));
                             break;
-                        case "b":                           
+                        case "b":
+                            ClearDisplayMenu();
                             Console.WriteLine("\n>>>\t {0}", OptionsB.Reverse1(inputString));
                             break;
                         case "c":
+                            ClearDisplayMenu();
                             Console.WriteLine("\n>>>\t {0} vowels", OptionsC.VowelsStr(inputString));
                             break;
                         case "d":
+                            ClearDisplayMenu();
                             Console.WriteLine("\n>>>\t {0} words", OptionsD.CountWords(inputString));
                             break;
                         case "e":
-                            Console.WriteLine("\n>>>\t {0}", OptionsE.TitleCase(inputString));
+                            //ClearDisplayMenu();
+                            Console.WriteLine("\n>>>\t {0}", OptionsE.TitleCaseC(inputString));
                             break;
                         case "f":
+                            ClearDisplayMenu();
                             Console.WriteLine("\n>>>\t '{0}' {1}",inputString, OptionsF.PalindromeC(inputString));
                             break;
-                        case "g":                           
+                        case "g":
+                            ClearDisplayMenu();
                             OptionsG.MinMaxWord(inputString);
                             break;
                         case "h":
+                            ClearDisplayMenu();
+                            OptionsH.MostUsedWord(inputString);
+                            break;
+                        case "i":
+                            ClearDisplayMenu();
                             OptionsH.MostUsedWord(inputString);
                             break;
                         case "n":
-                            Console.Clear();
-                            DisplayMenu();
+                            ClearDisplayMenu();
                             AskUserString();
                             break;
                         case "q":
@@ -55,8 +66,7 @@ namespace SMOconsoleApp
                             Console.Write("Do you want to exit the program Y/N:");
                             char askExit = Convert.ToChar(Console.ReadLine().Trim().ToLower());
                             if (askExit == 'y') { checkString = true; }
-                            Console.Clear();
-                            DisplayMenu();
+                            ClearDisplayMenu();
                             break;
                         default:
                             Console.WriteLine("\tWrong input, plese insert a menu option");
@@ -97,16 +107,14 @@ namespace SMOconsoleApp
                 inputString = Console.ReadLine().Trim();
                 if (inputString.Length <= 1)
                 {
-                    Console.Clear();
-                    DisplayMenu();
+                    ClearDisplayMenu();
                     Console.WriteLine("\n*** You have to insert a string greater than 1 char ***");
                     checkLength = false;                   
                     
                 } 
                 else
                 {
-                    Console.Clear();
-                    DisplayMenu();
+                    ClearDisplayMenu();
                     Console.WriteLine("\nYour string is: \n{0}", inputString);
                     checkLength = true;
                 }
@@ -129,5 +137,10 @@ namespace SMOconsoleApp
             Console.WriteLine("\n\r\t q. Exit program");
             Console.WriteLine("\r\t ============================================");
         }       
+        public static void ClearDisplayMenu()
+        {
+            Console.Clear();
+            DisplayMenu();
+        }
     }
 }

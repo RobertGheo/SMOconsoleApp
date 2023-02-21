@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace SMOconsoleApp.MenuOptions
 {
-    internal class OptionsA
+    internal class OptionsI
     {
-        public static string UpperCase(string upperString)
+        public static void MultipleOperations(string upperString)
         {
-            upperString = upperString.ToUpper();           
+
+            upperString = upperString.ToUpper();
+            Console.Clear();
+            Program.DisplayMenu();
             Console.WriteLine("\nThe result for option A:");
-            return upperString;
+           
         }
 
     }

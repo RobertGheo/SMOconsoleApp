@@ -12,9 +12,7 @@ namespace SMOconsoleApp.MenuOptions
         public static string Reverse1(string reverse)
         {
             char[] charArray = reverse.ToCharArray();
-            Array.Reverse(charArray);
-            Console.Clear();
-            Program.DisplayMenu();
+            Array.Reverse(charArray);            
             Console.WriteLine("\nThe result for option B:");
             return new string(charArray);
         }
@@ -29,8 +27,6 @@ namespace SMOconsoleApp.MenuOptions
             {
                 reverseStr += charArray[i];
             }
-            Console.Clear();
-            Program.DisplayMenu();
             Console.WriteLine("\nThe result for option B1:");
             return reverseStr;
         }

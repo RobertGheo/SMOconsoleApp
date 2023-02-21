@@ -44,8 +44,7 @@ namespace SMOconsoleApp.MenuOptions
             
             minWord = inputS.Substring(minStartIndex, minLength);
             maxWord = inputS.Substring(maxStartIndex, maxLength);
-            Console.Clear();
-            Program.DisplayMenu();
+            
             Console.WriteLine("\nThe result for option G:");
             Console.WriteLine("Your string: '{0}'", inputS);
             Console.WriteLine("\n>>>\t Longest word: '{0}'", maxWord);

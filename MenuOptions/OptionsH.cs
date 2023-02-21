@@ -38,9 +38,8 @@ namespace SMOconsoleApp.MenuOptions
                     tempTimes = pair.Value;
                     tempString = pair.Key;
                 }               
-            }           
-            Console.Clear();
-            Program.DisplayMenu();
+            } 
+
             Console.WriteLine("\nThe result for option H:");
             Console.WriteLine("Your string: '{0}'", inputString);
             Console.WriteLine("\n>>>\t '{0}' is most frequent word, used '{1}' times", tempString, tempTimes);           
