@@ -123,7 +123,7 @@ namespace SMOconsoleApp
             Console.WriteLine("\n\r\t g. Find the longest and shortest words in the string");
             Console.WriteLine("\n\r\t h. Find the most frequent word in the string");
             Console.WriteLine("\n\r\t i. Perform multiple operation on the sting");
-            Console.WriteLine("\n\r\t j. New string operation");
+            Console.WriteLine("\n\r\t j. Own string operation");
             Console.WriteLine("\n\r\t n. Insert a new string");
             Console.WriteLine("\n\r\t q. Exit program");
             Console.WriteLine("\r\t ============================================");
