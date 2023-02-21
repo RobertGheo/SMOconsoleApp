@@ -9,21 +9,11 @@ using System.Collections;
 namespace SMOconsoleApp.MenuOptions
 {
     internal class OptionsE
-    {
+    {      
         public static string TitleCase(string inputStr)
-        {
-            TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
-            inputStr = textInfo.ToTitleCase(inputStr.ToLower());
-           
-            Console.WriteLine("\nThe result for option E:");
-            return inputStr;
-        }
-
-        public static string TitleCaseB(string inputStr)
         {
             string sInput = inputStr.ToLower();            
             char[] charArray = sInput.ToCharArray();
-
             string storageWord ="";
 
             for (int i =0 ; i < charArray.Length; i++)
@@ -45,13 +35,13 @@ namespace SMOconsoleApp.MenuOptions
                     else
                     {
                         storageWord += charArray[i];
-
                     }                  
                 }
-            }           
+            }
+            Console.WriteLine("\nThe result for option E:");
             return storageWord;
         }
-        public static string TitleCaseC(string inputStr)
+        public static string TitleCaseB(string inputStr)
         {
             string sInput = inputStr.ToLower();
             char[] charArray = sInput.ToCharArray();
@@ -82,7 +72,16 @@ namespace SMOconsoleApp.MenuOptions
                     i++;
                 }
             }
+            Console.WriteLine("\nThe result for option E:");
             return storageWord;
+        }
+        public static string TitleCaseC(string inputStr)
+        {
+            TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+            inputStr = textInfo.ToTitleCase(inputStr.ToLower());
+
+            Console.WriteLine("\nThe result for option E:");
+            return inputStr;
         }
 
     }

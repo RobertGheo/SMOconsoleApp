@@ -13,24 +13,24 @@ namespace SMOconsoleApp.MenuOptions
             Dictionary<string, int> dictionary = new Dictionary<string, int>();
 
             string sInput = inputString.ToLower();
-            sInput = sInput.Replace(",", ""); //Just cleaning up a bit
-            sInput = sInput.Replace(".", ""); //Just cleaning up a bit
-            string[] arr = sInput.Split(' '); //Create an array of words
+            sInput = sInput.Replace(",", ""); 
+            sInput = sInput.Replace(".", ""); 
+            string[] arr = sInput.Split(' '); 
 
-            foreach (string word in arr) //let's loop over the words
+            foreach (string word in arr) 
             {
-                if (word.Length >= 2) //if it meets our criteria of at least 2 letters
+                if (word.Length >= 2) 
                 {
-                    if (dictionary.ContainsKey(word)) //if it's in the dictionary
-                        dictionary[word] = dictionary[word] + 1; //Increment the count
+                    if (dictionary.ContainsKey(word)) 
+                        dictionary[word] = dictionary[word] + 1;
                         
                     else
-                        dictionary[word] = 1; //put it in the dictionary with a count 1
+                        dictionary[word] = 1; 
                 }
             }
             int tempTimes = 0;
             string tempString = "";
-            foreach (KeyValuePair<string, int> pair in dictionary) //loop through the dictionary
+            foreach (KeyValuePair<string, int> pair in dictionary) 
             {
                 //Console.WriteLine("Key: {0}, Pair: {1}", pair.Key, pair.Value);   
                 if (tempTimes <= pair.Value)
@@ -40,8 +40,7 @@ namespace SMOconsoleApp.MenuOptions
                 }               
             } 
 
-            Console.WriteLine("\nThe result for option H:");
-            Console.WriteLine("Your string: '{0}'", inputString);
+            Console.WriteLine("\nThe result for option H:");            
             Console.WriteLine("\n>>>\t '{0}' is most frequent word, used '{1}' times", tempString, tempTimes);           
         }
 

@@ -11,14 +11,13 @@ namespace SMOconsoleApp.MenuOptions
         public static bool Palindrome(string inputUser)
         {
             string insertStr = inputUser.ToLower();
-            char[] reverseStr = insertStr.ToCharArray();
-            Console.WriteLine(reverseStr);
+            char[] reverseStr = insertStr.ToCharArray();           
             Array.Reverse(reverseStr);
-            Console.WriteLine(reverseStr);
 
             Console.WriteLine("\nThe result for option F:");
             return new string(reverseStr).Equals(insertStr);
         }
+
         public static string PalindromeB(string inputUser)
         {
             string reverseStr = string.Empty;
@@ -48,9 +47,7 @@ namespace SMOconsoleApp.MenuOptions
             char[] reverseStr = insertStr.ToCharArray();
             string resultPal;
 
-            Console.WriteLine(reverseStr);
             Array.Reverse(reverseStr);
-            Console.WriteLine(reverseStr);
 
             if (new string(reverseStr).Equals(insertStr))
             {

@@ -7,10 +7,9 @@ namespace SMOconsoleApp
         public static string inputString;
         static void Main(string[] args)
         {            
-            bool checkString = false;
-            //char selectInt;
-            Console.WriteLine("<<< Welcome to the String manipulation program >>>");
-
+            bool checkString = false;            
+           
+            DisplayBanner.DisplayBannerA();           
             DisplayMenu();
             AskUserString();
 
@@ -38,12 +37,12 @@ namespace SMOconsoleApp
                             Console.WriteLine("\n>>>\t {0} words", OptionsD.CountWords(inputString));
                             break;
                         case "e":
-                            //ClearDisplayMenu();
-                            Console.WriteLine("\n>>>\t {0}", OptionsE.TitleCaseC(inputString));
+                            ClearDisplayMenu();
+                            Console.WriteLine("\n>>>\t {0}", OptionsE.TitleCase(inputString));
                             break;
                         case "f":
                             ClearDisplayMenu();
-                            Console.WriteLine("\n>>>\t '{0}' {1}",inputString, OptionsF.PalindromeC(inputString));
+                            Console.WriteLine("\n>>>\t '{0}' {1}",inputString, OptionsF.Palindrome(inputString));
                             break;
                         case "g":
                             ClearDisplayMenu();
@@ -55,7 +54,11 @@ namespace SMOconsoleApp
                             break;
                         case "i":
                             ClearDisplayMenu();
-                            OptionsH.MostUsedWord(inputString);
+                            OptionsI.MultipleOperations(inputString);
+                            break;
+                        case "j":
+                            ClearDisplayMenu();
+                            OptionsJ.NewOperation(inputString);
                             break;
                         case "n":
                             ClearDisplayMenu();
@@ -78,21 +81,6 @@ namespace SMOconsoleApp
                     Console.WriteLine("No empty menu input is allowed!" + e.Message);
                     
                 }
-                /*
-                if (char.TryParse(inputMenu, out selectInt) || selectInt == 'q')
-                {
-
-                    Console.WriteLine("Your input is {0} ", inputMenu);
-                }
-                else if (!char.TryParse(inputMenu, out selectInt) || selectInt < 'a' || selectInt > 'e') 
-                {
-
-                }
-                else
-                {
-                    Console.WriteLine("Your input is {0} ", inputMenu);
-                }*/
-
             }
             //Console.ReadKey();
             Console.Clear();
@@ -109,16 +97,14 @@ namespace SMOconsoleApp
                 {
                     ClearDisplayMenu();
                     Console.WriteLine("\n*** You have to insert a string greater than 1 char ***");
-                    checkLength = false;                   
-                    
+                    checkLength = false;    
                 } 
                 else
                 {
                     ClearDisplayMenu();
                     Console.WriteLine("\nYour string is: \n{0}", inputString);
                     checkLength = true;
-                }
-                
+                }                
             }
         }
         public static void DisplayMenu()
